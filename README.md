@@ -9,10 +9,11 @@
 
 2. Introduction
   Source of Data: https://www.kaggle.com/datasets/hugomathien/soccer
-  In our analysis we will observe trends between different player attributes and see if there is any correlation.  
+  For our final project, we looked at player statistics from professional soccer leagues. It contains informatoin on over 25,000 matches and 11,000 players. It has all sorts of player attributes like strength, speed, aggression, etc. These attributes were obtained from EA Sports' FIFA games. 
+We wanted to observe relationships between different player attributes using different statistical tests. 
 
 3. Data Curation
-In this step, we collect data. We got our database from: https://www.kaggle.com/datasets/hugomathien/soccer. It offers information from over 25000 matches from 2008 to 2016. It also contains information about team and player attributes from FIFA, a sports game by Electronic Arts(EA). 
+In this step, we collect data. Let's load the SQLite database.  
 ```
 import sqlite3
 import pandas as pd
@@ -50,6 +51,7 @@ conn.close()
 ```
 Here we connect to the database and list the tables out. Each table is saved as a seperate csv. 
 Now lets clean the data! 
+Specifically, we narrow down on two tables: Player.csv and Player_Attributes.csv.
 
 ```
 player_df = pd.read_csv("Player.csv")
