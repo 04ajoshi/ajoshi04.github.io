@@ -17,7 +17,9 @@ In the first step we need to get data. Like I mentioned earlier, we used a datab
 Here are the libraries we will need to use. 
 Some important ones are: 
 [pandas](https://pandas.pydata.org/) - for data manipulation
+
 [scipy.stats](https://docs.scipy.org/doc/scipy/reference/stats.html) - for different statistical models and functions
+
 [sklearn](https://scikit-learn.org/stable/) - for ML stuff
 
 ```
