@@ -13,7 +13,7 @@
 We wanted to observe relationships between different player attributes using different statistical tests. 
 
 3. Data Curation:
-First we need to import some libraries that help us to analyze and visualize the data. 
+Source of Data: https://www.kaggle.com/datasets/hugomathien/soccer
 ```
 import sqlite3
 import pandas as pd
