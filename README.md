@@ -7,12 +7,12 @@
   Contributions:
 
 
-2. Introduction
+2. Introduction:
   Source of Data: https://www.kaggle.com/datasets/hugomathien/soccer
   For our final project, we looked at player statistics from professional soccer leagues. It contains informatoin on over 25,000 matches and 11,000 players. It has all sorts of player attributes like strength, speed, aggression, etc. These attributes were obtained from EA Sports' FIFA games. 
 We wanted to observe relationships between different player attributes using different statistical tests. 
 
-3. Data Curation
+3. Data Curation:
 First we need to import some libraries that help us to analyze and visualize the data. 
 ```
 import sqlite3
@@ -89,7 +89,7 @@ player_df
 
 Perfect! We are now ready to analyze our data. 
 
-4. Exploratory Data Analysis
+4. Exploratory Data Analysis:
   Now lets actually explore our data and try to find patterns or correlations between the data. 
 Lets see if age affects spring speed and acceleration in players. Does getting older cause your agility to suffer? 
 Real quick, lets go over null hypotheses and hypothesis testing.
