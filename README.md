@@ -58,9 +58,10 @@ for table_name in tables:
 
 conn.close()
 ```
-Then we loop through the tables and lists them out. Each table is saved as a seperate csv. 
-Now lets clean the data! 
-Specifically, we narrow down on two tables: Player.csv and Player_Attributes.csv.
+We loop through the tables and get all the data. Each table is then saved as a seperate csv using their names. 
+Ok so we got all our data, can we start to mess around with it now? Not just yet. We still need to clean it up. There are lots of missing data points, data night be in a format that is difficult to modify, and just generally make it cleaner and easier to work with. Lets get started. 
+
+First, we can ignore some of the other tables and focus on two primary ones. Player.csv and Player_attributes.csv. These both contain information about different players. 
 
 ```
 player_df = pd.read_csv("Player.csv")
@@ -74,7 +75,8 @@ player_df['age'] = (((player_df['date'] - player_df['birthday']).dt.days)/365.25
 ```
 
 First we need to load the CSVs into dataframes. Then we can convert the birthdays into a datetime format, making it easier to work with. 
-Why? Well now we can easily calculate the age of a player. We create a new column called age that shows how old a player is. 
+Now we can calculate the age of a player. We will grab the most recent date that a player has attribute data for. Then we subtract that from their birthdate to get their age.
+Next, we can put that into a new column called age that will show how old a player is. 
 
 We also need to fill in any potential missing data points. Here we group by players and use forward and backward fill to fill gaps. 
 ```
