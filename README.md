@@ -13,7 +13,13 @@
 We wanted to observe relationships between different player attributes using different statistical tests. 
 
 3. Data Curation:
-Source of Data: https://www.kaggle.com/datasets/hugomathien/soccer
+In the first step we need to get data. Like I mentioned earlier, we used a database of soccer players and their attributes. The raw data is inside a SQLLite database. In order to analyze this data we first need to convert different tables from that database into different CSV files. 
+Here are the libraries we will need to use. 
+Some important ones are: 
+[pandas](https://pandas.pydata.org/) - for data manipulation
+[scipy.stats](https://docs.scipy.org/doc/scipy/reference/stats.html) - for different statistical models and functions
+[sklearn](https://scikit-learn.org/stable/) - for ML stuff
+
 ```
 import sqlite3
 import pandas as pd
