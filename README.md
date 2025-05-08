@@ -13,7 +13,7 @@
 We wanted to observe relationships between different player attributes using different statistical tests. 
 
 3. Data Curation
-In this step, we collect data. Let's load the SQLite database.  
+First we need to import some libraries that help us to analyze and visualize the data. 
 ```
 import sqlite3
 import pandas as pd
@@ -26,7 +26,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 ```
-Here are the libraries we need. We also load the data. Lets start by opening a connecting to our database. The cursor object lets use SQL commands. 
+Lets start by opening a connecting to our database. The cursor object lets use SQL commands. 
 
 ```
 conn = sqlite3.connect('database.sqlite')
