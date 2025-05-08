@@ -26,7 +26,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 ```
-Here are the libraries we need. We also load the data.
+Here are the libraries we need. We also load the data. Lets start by opening a connecting to our database. The cursor object lets use SQL commands. 
 
 ```
 conn = sqlite3.connect('database.sqlite')
@@ -49,7 +49,7 @@ for table_name in tables:
 
 conn.close()
 ```
-Here we connect to the database and list the tables out. Each table is saved as a seperate csv. 
+Then we loop through the tables and lists them out. Each table is saved as a seperate csv. 
 Now lets clean the data! 
 Specifically, we narrow down on two tables: Player.csv and Player_Attributes.csv.
 
